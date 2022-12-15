@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+
+header,footer{
+    height: 100px;
+    border: 2px solid black;
+    clear: both;
+}
+
+section{
+    height: 300px;
+    border: 2px solid black;
+    width: 20%;
+    float: left;
+}
+
+.largeSection{
+    width: 40%;
+}

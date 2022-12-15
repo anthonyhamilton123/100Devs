@@ -1,0 +1,94 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  text-align: center;
+
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: #6a7688;
+  color: white;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+}
+
+li{
+  padding: 0 10px 0 10px;
+}
+
+h1{
+  font-size: 72pt;
+}
+
+.navButton{
+  border: none;
+  color: #6a7688;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+  margin: 10px 10px 0 0;
+  border-radius: 8px;
+}
+
+.topBox{
+  color: white;
+  background-image: url(../assets/pexels-victor-freitas-841130.jpg);
+  padding: 150px 0 150px;
+}
+
+.boxThree{
+  background-color: #6a7688;
+  display: flex;
+}
+
+.whiteDiv{
+  padding: 100px 300px 100px 300px;
+}
+
+.greyBox{
+  padding: 100px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

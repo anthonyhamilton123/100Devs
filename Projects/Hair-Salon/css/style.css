@@ -1,0 +1,141 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-size: 62.5%;
+
+}
+
+ul{
+  flex-basis: 3;
+  display: flex;
+  justify-content: space-between; 
+}
+
+li{
+  list-style: none;
+  padding: 0 5px;
+}
+
+button{
+  background-color: antiquewhite;
+}
+
+main{
+  background-image: url(..//assets/main-image.jpg);
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  font-size: 4rem;
+  color: white;
+  margin: 0 50% 0 10%;
+  padding: 100px 0 0 0;
+}
+
+h6{
+  margin-left: 10%;
+  font-size: .75rem;
+  color: white;
+}
+
+main > button{
+  background-color: black;
+  color: antiquewhite;
+  margin-left: 10%;
+  width: 100px;
+  height: 50px;
+}
+
+main > span{
+  transform: rotate(-90deg);
+  color: antiquewhite;
+  position: absolute;
+  top: 200px;
+  right: 0px;
+  font-size: 1rem;
+}
+
+main > section {
+  background-color: black;
+  color: antiquewhite;
+  margin: 50px auto 50px 10%;
+  width: 400px;
+  padding: 25px;
+}
+
+main + section{
+  display: flex;
+}
+
+main > section + button{
+  width: 25px;
+  position: absolute;
+  top: 600px;
+  right: 150px;
+  height: 25px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  color: black;
+}
+
+main > section + button + button{
+  width: 25px;
+  position: absolute;
+  top: 600px;
+  right: 100px;
+  height: 25px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  color: black;
+}
+
+
+article{
+  background-color: lightgray;
+  display: flex;
+}
+
+article > img{
+  width: 25%;
+  margin: 10px auto;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  display: flex;
+  justify-content: space-around;
+  height: 30px;
+  background-color: antiquewhite;
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

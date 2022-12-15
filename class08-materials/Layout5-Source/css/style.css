@@ -1,0 +1,161 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: sans-serif;
+  background-color: lightgrey;
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background-color: lightgray;
+  height: 50px;
+  padding: 10px;
+
+}
+
+.hamburger{
+  display: none;
+}
+
+img{
+  float: left;
+}
+
+h4{
+  float: left;
+  margin: 0;
+}
+
+
+ul{
+  margin: 0 0 0 20%;
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+li{
+  float: left;
+  margin: 0 50px;
+  
+}
+
+.button{
+  float: right;
+  background: darkblue;
+  color: white;
+  text-decoration: none;
+  margin: 10px 10px 0 0;
+  padding: 5px 10px;
+  border: 1px solid grey;
+}
+
+.mainButton{
+  float: none;
+}
+
+section{
+  background: lightgrey;
+  clear: both;
+  padding: 50px;
+}
+
+.mainImage{
+  float: right;
+  background-color: lightgray;
+}
+
+div{
+  width: 50%;
+  float: left;
+  background-color: lightgrey;
+}
+
+article{
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.lastSection{
+  background-color: white;
+}
+
+.articleLink{
+  color: #131313;
+}
+
+h2{
+  clear: both;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 600px) {
+  .hamburger{
+    display: inline-block;
+  }
+  
+  ul{
+    display: none;
+  }
+
+  .button{
+    display: none;
+  }
+
+  .mainButton{
+    display: block;
+    width: 100%;
+  }
+
+  h4{
+    float: none;
+    width: 50px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  div{
+    width: 100%;
+  }
+
+  input{
+    width: 100%;
+  }
+
+  article{
+    width: 100%;
+  }
+}
