@@ -13,6 +13,8 @@
 img{
   display: block;
   margin: 0 auto;
+  height: 200px;
+  border: 1 solid red;
 }
 
 
